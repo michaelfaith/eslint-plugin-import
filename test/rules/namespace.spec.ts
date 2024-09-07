@@ -195,7 +195,6 @@ const valid = [
 
     settings: {
       'import-x/parsers': { [parsers.TS]: ['.ts'] },
-      'import-x/resolver': { 'eslint-import-resolver-typescript': true },
     },
   }),
 
@@ -204,7 +203,6 @@ const valid = [
 
     settings: {
       'import-x/parsers': { [parsers.TS]: ['.ts'] },
-      'import-x/resolver': { 'eslint-import-resolver-typescript': true },
     },
   }),
 
@@ -213,7 +211,6 @@ const valid = [
 
     settings: {
       'import-x/parsers': { [parsers.TS]: ['.ts'] },
-      'import-x/resolver': { 'eslint-import-resolver-typescript': true },
     },
   }),
 
@@ -222,7 +219,6 @@ const valid = [
 
     settings: {
       'import-x/parsers': { [parsers.TS]: ['.ts'] },
-      'import-x/resolver': { 'eslint-import-resolver-typescript': true },
     },
   }),
 

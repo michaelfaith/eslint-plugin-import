@@ -400,7 +400,6 @@ describe('TypeScript', () => {
       },
       settings: {
         'import-x/parsers': { [parsers.TS]: ['.ts'] },
-        'import-x/resolver': { 'eslint-import-resolver-typescript': true },
       },
     }
 

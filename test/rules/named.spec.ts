@@ -443,7 +443,6 @@ describe('export *', () => {
 describe('TypeScript', () => {
   const settings = {
     'import-x/parsers': { [parsers.TS]: ['.ts'] },
-    'import-x/resolver': { 'eslint-import-resolver-typescript': true },
   }
 
   let valid = [

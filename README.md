@@ -144,7 +144,7 @@ rules:
 You may use the following snippet or assemble your own config using the granular settings described below it.
 
 > [!WARNING]
-> Make sure you have installed [`@typescript-eslint/parser`] and [`eslint-import-resolver-typescript`] which are used in the following configuration.
+> Make sure you have installed [`@typescript-eslint/parser`].
 
 ```yaml
 extends:
@@ -152,16 +152,9 @@ extends:
   - plugin:import-x/recommended
   # the following lines do the trick
   - plugin:import-x/typescript
-settings:
-  import-x/resolver:
-    # You will also need to install and configure the TypeScript resolver
-    # See also https://github.com/import-js/eslint-import-resolver-typescript#configuration
-    typescript: true
-    node: true
 ```
 
 [`@typescript-eslint/parser`]: https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/parser
-[`eslint-import-resolver-typescript`]: https://github.com/import-js/eslint-import-resolver-typescript
 
 ## Configuration (new: `eslint.config.js`)
 
@@ -185,12 +178,6 @@ export default [
 
 <details>
   <summary>Typescript example</summary>
-
-You have to install `eslint-import-resolver-typescript`:
-
-```shell
-npm install eslint-import-resolver-typescript --save-dev
-```
 
 ```js
 import js from '@eslint/js'
@@ -239,7 +226,7 @@ Node does not, such as loaders (`import 'file!./whatever'`) and a number of
 aliasing schemes, such as [`externals`]: mapping a module id to a global name at
 runtime (allowing some modules to be included more traditionally via script tags).
 
-In the interest of supporting both of these, v0.11 introduces resolvers.
+In the interest of supporting both of these, v0.11 introduced resolvers.
 
 Currently [Node] and [webpack] resolution have been implemented, but the
 resolvers are just npm packages, so [third party packages are supported](https://github.com/import-js/eslint-plugin-import/wiki/Resolvers) (and encouraged!).

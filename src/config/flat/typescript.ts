@@ -26,9 +26,6 @@ export default {
     'import-x/parsers': {
       '@typescript-eslint/parser': [...typeScriptExtensions],
     },
-    'import-x/resolver': {
-      typescript: true,
-    },
   },
   rules: {
     // analysis/correctness

@@ -204,14 +204,12 @@ describe('TypeScript', () => {
         code: `import foobar from "./typescript-default"`,
         settings: {
           'import-x/parsers': { [parsers.TS]: ['.ts'] },
-          'import-x/resolver': { 'eslint-import-resolver-typescript': true },
         },
       }),
       test({
         code: `import foobar from "./typescript-export-assign-default"`,
         settings: {
           'import-x/parsers': { [parsers.TS]: ['.ts'] },
-          'import-x/resolver': { 'eslint-import-resolver-typescript': true },
         },
       }),
       test({
@@ -219,7 +217,6 @@ describe('TypeScript', () => {
 
         settings: {
           'import-x/parsers': { [parsers.TS]: ['.ts'] },
-          'import-x/resolver': { 'eslint-import-resolver-typescript': true },
         },
       }),
       test({
@@ -227,7 +224,6 @@ describe('TypeScript', () => {
 
         settings: {
           'import-x/parsers': { [parsers.TS]: ['.ts'] },
-          'import-x/resolver': { 'eslint-import-resolver-typescript': true },
         },
       }),
       test({
@@ -235,7 +231,6 @@ describe('TypeScript', () => {
 
         settings: {
           'import-x/parsers': { [parsers.TS]: ['.ts'] },
-          'import-x/resolver': { 'eslint-import-resolver-typescript': true },
         },
       }),
       test({
@@ -243,7 +238,6 @@ describe('TypeScript', () => {
 
         settings: {
           'import-x/parsers': { [parsers.TS]: ['.ts'] },
-          'import-x/resolver': { 'eslint-import-resolver-typescript': true },
         },
         languageOptions: {
           parserOptions: {
@@ -259,7 +253,6 @@ describe('TypeScript', () => {
 
         settings: {
           'import-x/parsers': { [parsers.TS]: ['.ts'] },
-          'import-x/resolver': { 'eslint-import-resolver-typescript': true },
         },
 
         languageOptions: {
@@ -276,7 +269,6 @@ describe('TypeScript', () => {
 
         settings: {
           'import-x/parsers': { [parsers.TS]: ['.ts'] },
-          'import-x/resolver': { 'eslint-import-resolver-typescript': true },
         },
         languageOptions: {
           parserOptions: {
@@ -292,7 +284,6 @@ describe('TypeScript', () => {
 
         settings: {
           'import-x/parsers': { [parsers.TS]: ['.ts'] },
-          'import-x/resolver': { 'eslint-import-resolver-typescript': true },
         },
         languageOptions: {
           parserOptions: {
@@ -308,7 +299,6 @@ describe('TypeScript', () => {
 
         settings: {
           'import-x/parsers': { [parsers.TS]: ['.ts'] },
-          'import-x/resolver': { 'eslint-import-resolver-typescript': true },
         },
       }),
     ],
@@ -319,7 +309,6 @@ describe('TypeScript', () => {
 
         settings: {
           'import-x/parsers': { [parsers.TS]: ['.ts'] },
-          'import-x/resolver': { 'eslint-import-resolver-typescript': true },
         },
         errors: ['No default export found in imported module "./typescript".'],
       }),
@@ -328,7 +317,6 @@ describe('TypeScript', () => {
 
         settings: {
           'import-x/parsers': { [parsers.TS]: ['.ts'] },
-          'import-x/resolver': { 'eslint-import-resolver-typescript': true },
         },
         errors: [
           'No default export found in imported module "./typescript-export-assign-default-namespace".',
@@ -339,7 +327,6 @@ describe('TypeScript', () => {
 
         settings: {
           'import-x/parsers': { [parsers.TS]: ['.ts'] },
-          'import-x/resolver': { 'eslint-import-resolver-typescript': true },
         },
         errors: [
           'No default export found in imported module "./typescript-export-as-default-namespace".',
@@ -350,7 +337,6 @@ describe('TypeScript', () => {
 
         settings: {
           'import-x/parsers': { [parsers.TS]: ['.ts'] },
-          'import-x/resolver': { 'eslint-import-resolver-typescript': true },
         },
         languageOptions: {
           parserOptions: {

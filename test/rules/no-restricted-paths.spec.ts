@@ -766,7 +766,6 @@ ruleTester.run('no-restricted-paths', rule, {
 describe('Typescript', () => {
   const settings = {
     'import-x/parsers': { [parsers.TS]: ['.ts'] },
-    'import-x/resolver': { 'eslint-import-resolver-typescript': true },
   }
   ruleTester.run('no-restricted-paths', rule, {
     valid: [

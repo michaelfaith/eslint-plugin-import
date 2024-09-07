@@ -180,12 +180,22 @@ function fullResolve(
     }
   }
 
-  const configResolvers = settings['import-x/resolver'] || {
-    node: settings['import-x/resolve'],
-  } // backward compatibility
+  let configResolvers;
+  if (settings['import-x/resolver']) {
+    configResolvers = settings['import-x/resolver']
+  } else if (settings['import-x/resolve']) {
+    // backward compatibility
+    configResolvers = {
+      node: settings['import-x/resolve'],
+    }
+  } else {
+    // Default to oxc if no resolver was specified
+    configResolvers = {
+      oxc: true,
+    }
+  }
 
   const resolvers = resolverReducer(configResolvers, new Map())
-
   for (const [name, config] of resolvers) {
     const resolver = requireResolver(name, sourceFile)
     const resolved = withResolver(resolver, config)

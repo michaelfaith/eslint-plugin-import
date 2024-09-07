@@ -889,7 +889,6 @@ describe('TypeScript', function () {
         code: `import foo from './no-rename-default/typescript-default'`,
         settings: {
           'import-x/parsers': { [parsers.TS]: ['.ts'] },
-          'import-x/resolver': { 'eslint-import-resolver-typescript': true },
         },
       }),
     ],
